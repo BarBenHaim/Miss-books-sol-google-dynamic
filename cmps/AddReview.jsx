@@ -70,7 +70,7 @@ export function AddReview({ saveReview, toggleReview }) {
 
                     <DynamicCmp cmpType={cmpType} handleChange={handleChange} rating={rating} />
 
-                    <select value={cmpType} onChange={ev => setCmpType(ev.target.value)}>
+                    <select value={cmpType} onChange={ev => onChangeCmpType(ev.target.value)}>
                         <option value='select'>Select</option>
                         <option value='numInput'>Num</option>
                         <option value='stars'>Stars</option>

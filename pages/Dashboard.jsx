@@ -6,7 +6,6 @@ export function Dashboard() {
     const [books, setBooks] = useState([])
     const [catsStats, setCatsStats] = useState([])
 
-    console.log(booksService.getCatsStats())
     useEffect(() => {
         booksService.query().then(setBooks)
         booksService.getCatsStats().then(setCatsStats)

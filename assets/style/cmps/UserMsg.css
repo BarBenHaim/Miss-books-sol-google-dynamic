@@ -12,13 +12,13 @@
 
     box-shadow: 1px 3px 11px 4px rgb(122 122 122 / 91%);
     border-radius: 20px;
-    background-color: #9dc7a7;
+    background-color: #919bb8;
     color: #094217;
 }
 
 .success {
-    background-color: #9dc7a7;
-    color: #094217;
+    background-color: #2d59b8;
+    color: #e6e6e6;
 }
 
 .error {

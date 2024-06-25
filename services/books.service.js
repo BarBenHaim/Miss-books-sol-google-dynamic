@@ -48,12 +48,8 @@ function getCatsStats() {
 }
 function _getBookCountByCatsMap(books) {
     const bookCountByCatsMap = books.reduce((map, book) => {
-        if (Array.isArray(book.categories)) {
-            book.categories.forEach(category => {
-                if (!map[category]) map[category] = 0
-                map[category]++
-            })
-        }
+        if (!map[book.categories]) map[book.categories] = 0
+        map[book.categories]++
         return map
     }, {})
     return bookCountByCatsMap
